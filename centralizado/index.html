@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Thiago Rech" />
+        <meta name="robots" content="index" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+        <title>LOGIN</title>
+    </head>
+    
+    <style>
+        *{margin:0;padding: 0;box-sizing: border-box;}
+        
+        body{
+            background-color: blueviolet;
+        }
+        form{
+            background-color: aliceblue;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        form h3{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form input[type=text],
+        form input[type=password]{
+            width: 100%;
+            height: 45px;
+            border: 1px solid aliceblue;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=submit]{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: purple;
+            color: aliceblue;
+            border: 0;
+            border-radius: 0;
+            transition: 1s;
+        }
+
+        form[type=submit]:hover{
+            background-color: aquamarine;
+
+        }
+    </style>
+
+    <body>
+        <form  action="http://127.0.0.1:80/" method="post">
+            <h3>Realizar Login</h3>
+            <input for="uname" type="text" name="usuario" placeholder="Seu usuario..."/>
+            <input for="pwd" type="password" name="senha" placeholder="Sua senha..." />
+            <input type="submit" name="acao" value="Entrar"/>
+        </form>
+
+    </body>
+
+</html>
